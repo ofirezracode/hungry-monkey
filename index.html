@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Pacman</title>
+    <link rel="stylesheet" href="css/app.css" />
+  </head>
+
+  <body onload="init()" onkeyup="movePacman(event)">
+    <header class="container">
+      <h1>Hungry Monkey</h1>
+      <h2>Score: <span>0</span></h2>
+    </header>
+    <div class="container board-container"></div>
+
+    <div class="modal">
+      <h2 class="user-msg">You Won!</h2>
+      <button class="restart-btn" onclick="init()">Restart</button>
+    </div>
+
+    <script src="js/utils.js"></script>
+    <script src="js/util.js"></script>
+    <script src="js/game.js"></script>
+    <script src="js/pacman.js"></script>
+    <script src="js/ghost.js"></script>
+    <script src="js/cherry.js"></script>
+  </body>
+</html>
